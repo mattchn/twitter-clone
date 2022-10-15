@@ -29,3 +29,8 @@ export default {
     },
   ],
 }
+
+// _type: 'comment',
+//           comment: comment.comment,
+//           username: comment.username,
+//           profileImg: comment.profileImg,
