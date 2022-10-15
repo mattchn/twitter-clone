@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import {
    CalendarIcon,
    EmojiHappyIcon,
@@ -7,7 +7,7 @@ import {
    SearchCircleIcon
 } from '@heroicons/react/outline'
 import { useSession } from 'next-auth/react'
-import { Tweet, TweetBody } from '../typings'
+import { TweetBody } from '../typings'
 import { fetchTweets } from '../util/fetchTweets'
 import toast from 'react-hot-toast'
 

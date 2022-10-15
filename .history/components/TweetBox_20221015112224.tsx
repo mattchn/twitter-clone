@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import {
    CalendarIcon,
    EmojiHappyIcon,
@@ -12,6 +12,7 @@ import { fetchTweets } from '../util/fetchTweets'
 import toast from 'react-hot-toast'
 
 interface Props{
+   tweets: Tweet[]
    setTweets: Dispatch<SetStateAction<Tweet[]>>
 }
 
