@@ -9,7 +9,9 @@ const commentQuery = groq`
         ...
     } | order(_createdAt desc)
 `
-type Data = Comment[]
+type Data = {
+    comments: Comment[]
+  }
 
 export default async function handler(
     req: NextApiRequest,
