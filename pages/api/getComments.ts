@@ -16,7 +16,7 @@ export default async function handler(
     res: NextApiResponse<Data>
 ) {
     const { tweetId } = req.query
-    const comments: Comment[] = await sanityClient.fetch(commentQuery, {
+    const comments = await sanityClient.fetch(commentQuery, {
         tweetId,
     })
     res.status(200).json(comments)
